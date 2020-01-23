@@ -9,6 +9,7 @@ const Admin = require('./routes/Admin')
 const Products = require ('./routes/Products')
 const Filters = require('./routes/Filters')
 const womenFlter =  require('./routes/womenfilter')
+const path = require('path')
 const port = process.env.PORT || 5000
 const cors = require('cors')
 const morgan = require('morgan')
@@ -22,7 +23,9 @@ app.use(
 
 //'mongodb+srv://virap:erevan10@cluster0-vxh3h.mongodb.net/test?retryWrites=true&w=majority'
 // 'mongodb://localhost/Lite_shop'/
-const mongoURI = 'mongodb+srv://virap:erevan10@cluster0-vxh3h.mongodb.net/test?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/Lite_shop'
+// 'mongodb+srv://virap:erevan10@cluster0-vxh3h.mongodb.net/test?retryWrites=true&w=majority';
+
 
 mongoose
   .connect(
@@ -43,6 +46,16 @@ app.use('/users', Users)
 app.use('/stok', Goods)
 app.use('/s',Admin)
 app.use('/', Products)
+
+if (process.env.NODE_ENV === 'production') {
+  const publicPath = path.join (__dirname, './','client', 'build');
+  app.use (express.static (publicPath));
+  app.get ('*', (req, res) => { 
+       
+      res.sendFile (path.join (publicPath, 'index.html')); 
+   })
+  }
+
 app.use((req,res,next)=>{
   const error = new Error('Note Found');
   error.status = 404;

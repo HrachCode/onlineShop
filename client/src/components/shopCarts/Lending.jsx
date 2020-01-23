@@ -17,7 +17,7 @@ class Shopcart extends React.Component {
         QuickCards:'',
     }
     componentDidMount(){
-        setProduct(`http://localhost:5000/stok/${this.state.query}`,"GET")
+        setProduct(`stok/${this.state.query}`,"GET")
             .then(body =>{
                 this.getProduct(body)
             })
@@ -46,7 +46,7 @@ class Shopcart extends React.Component {
             query:el,
 
         });
-        setProduct(`http://localhost:5000/stok/${el}`,"GET")
+        setProduct(`stok/${el}`,"GET")
             .then(body =>{
                 this.getProduct(body)
             })
