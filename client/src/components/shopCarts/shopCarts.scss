@@ -1,0 +1,142 @@
+.shopCartscontainer{
+  width: 85%;
+  margin: 0 auto;
+  .carts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    img {
+      width: 70%;
+
+    }
+  }
+}
+.shopCarts{
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 13px 0 rgba(128,128,128,0.5);
+  text-align: center;
+  position: relative;
+  padding: 15px 5px;
+  margin: 20px auto;
+  .new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 10px;
+    background: #FC626D;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+.cartitemname h4{
+  color: #FC626D;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+.cartprice {
+  margin-bottom: 10px;
+  span{
+    font-weight: bolder;
+    font-size: 15px;
+  }
+}
+.cartbutton{
+  input{
+    background: #2BDABA;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 15px;
+    font-weight: bolder;
+    color: white;
+  }
+  span{
+    border: 5px solid transparent;
+  }
+}
+.cartNavigate{
+  width:60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  ul{
+    display: flex;
+
+  }
+  li{
+    list-style-type: none;
+    font-size: 23px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 5px 0;
+  }
+}
+.notactive{
+  border : 1px solid rgba(128,128,128,0.5);
+  border-radius: 5px;
+  margin: 0 10px;
+
+}
+.actives{
+  background: #FC626D;
+  transition: .4s;
+  color: white;
+  border:1px solid transparent  ;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.shops{
+  margin: 80px auto ;
+}
+.wthree_text_info{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  span{
+  font-weight:100;
+  }
+}
+.imgquick{
+  position: relative;
+}
+.imgquick:hover .quickdiv{
+  top:80%;
+  opacity: 1;
+  transition: 1s;
+}
+.imgquick:hover  img{
+  transform: rotateY(360deg);
+  transition: 1s;
+}
+.quickdiv {
+  position: absolute;
+  left: 15%;
+  top:0;
+  width: 70%;
+  opacity: 0;
+
+}
+.quickbtn{
+  background: #2BDABA;
+  border: none;
+  padding: 5px 0;
+  width: 100%;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 15px;
+}

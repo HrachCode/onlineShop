@@ -1,0 +1,96 @@
+.headB{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: -10px;
+    align-self: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.headlogos ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-self: center;
+}
+.headlogos ul li{
+    list-style-type: none;
+}
+.searchform{
+    flex: 1;
+    padding: 2px;
+}
+.logo{
+    flex: 1.5;
+}
+.headlogos{
+    flex: 1;
+    align-self: center;
+    margin-top: 20px;
+
+}
+.korz{
+    animation: animik 2s;
+    opacity: 1;
+}
+.logo{
+    text-align: center;
+    position: relative;
+}
+.logo i{
+    position: absolute;
+    font-size: 20px;
+    top:84%;
+    right: 22%;
+    color: #2BDABA;
+}
+.e{
+    background: black;
+    color: white;
+    padding: 0px 17px;
+    font-weight: bolder;
+}
+.logo a{
+    font-size: 1.4em;
+    text-decoration: none;
+}
+.lite{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+.searchform h2{
+   font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+.searchform h2 span{
+    background: #0FC3A4;
+    color: white;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+@keyframes animik {
+    0%{
+        opacity: 0;
+      }
+    100%{
+        opacity: 1;
+    }
+}
+.searchform input::placeholder{
+    font-size: 15px;
+    color: lightgray;
+
+}
+.searchform{
+    animation: animik 2s;
+    opacity: 1;
+}
+.shareon{
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    align-self: center;
+}

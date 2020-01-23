@@ -1,0 +1,42 @@
+.footicondiv{
+  background: black;
+  color:white;
+  padding: 25px 30px;
+  align-self: center;
+  margin-right: 15px ;
+  margin-left: 2px;
+  font-size: 18px;
+}
+.ictxtdiv:hover .footicondiv{
+  background: #2BDABA;
+  transition: .5s;
+}
+.ictxtdiv{
+  display: flex;
+  justify-content: space-between;
+}
+.ictxtdiv>div{
+  justify-content: space-between;
+}
+.foottop>div{
+  margin: 0 auto;
+  display: flex;
+}
+.foottop{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  justify-content: space-between;
+}
+.foottoptxt h3{
+  text-transform: uppercase;
+  color: #2BDABA;
+  font-size: 15px;
+
+
+}
+.foottoptxt{
+  margin-top: -10px;
+}

@@ -1,0 +1,150 @@
+.logindiv {
+    font-family: 'Lora', sans-serif;
+    width: 100%;
+  }
+  .logform{
+      margin: 0 auto;
+  }
+  
+  .logindiv {
+    margin: 5% auto 0 auto;
+    width: 90%;
+    max-width: 1125px;
+  }
+  
+  .logindiv h1 {
+    font-size: 28px;
+    margin-bottom: 2.5%;
+  }
+  
+  .sub{
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    font-size: 22px;
+  }
+  
+  .logindiv  textarea:focus,
+  input:focus {
+    outline: 0;
+  }
+  
+  
+  .logindiv  input.question,
+  textarea.question {
+    font-size: 28px;
+    font-weight: 300;
+    border-radius: 2px;
+    margin: 0;
+    border: none;
+    width: 50%;
+    background: rgba(0, 0, 0, 0);
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    overflow-x: hidden; 
+  }
+ 
+  
+  .logindiv  input.question + label,
+  textarea.question + label {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    border-top: 1px solid red;
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+    height: 0px;
+  }
+  
+  .logindiv  input.question:focus + label,
+  textarea.question:focus + label {
+    width: 80%;
+  }
+  
+  .logindiv  input.question:focus,
+  input.question:valid {
+    padding-top: 35px;
+  }
+  
+  .logindiv  textarea.question:valid,
+  textarea.question:focus {
+    margin-top: 35px;
+  }
+  
+  .logindiv  input.question:focus + label > span,
+  input.question:valid + label > span {
+    top: -100px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .logindiv  textarea.question:focus + label > span,
+  textarea.question:valid + label > span {
+    top: -150px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .logindiv  input.question:valid + label,
+  textarea.question:valid + label {
+    border-color: green;
+  }
+  
+ .logindiv  input.question:invalid,
+  textarea.question:invalid {
+    box-shadow: none;
+  }
+  
+ 
+ 
+  .sub {
+    -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+    transition: opacity 0.2s ease, background 0.2s ease;
+    display: block;
+    opacity: 0;
+    margin: 10px 0 0 0;
+    padding: 22px;
+    cursor: pointer;
+  }
+  .sub:hover {
+    background: #EEE;
+  }
+  
+  .sub:active {
+    background: #999;
+  }
+  .text-succsess{
+    color: deeppink;
+    line-height: inherit;
+    text-decoration: overline;
+  }
+  .s nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+    -webkit-animation: appear 1s forwards;
+    animation: appear 1s forwards;
+  }
+  
+  input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+    display: none;
+  }
+  
+  @-webkit-keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+ 

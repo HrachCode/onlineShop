@@ -1,0 +1,115 @@
+.shopwindow{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+}
+.totalprice{
+  flex: 1;
+  height: 150px;
+  box-shadow: 0 0 7px 0 rgba(128,128,128,0.5);
+  position: sticky;
+  border-radius: 5px;
+  top: 15%;
+  .totprice{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+}
+
+.totalitems{
+  flex: 1.2;
+  margin-right: 30px;
+}
+.totsum{
+  text-align: center;
+  font-size: 35px;
+  color: #2BDABA;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nothing{
+  width: 80%;
+  padding: 100px;
+  box-shadow: 0 0 7px 0 rgba(128,128,128,0.5);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 10px;
+  p{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #2BDABA;
+  }
+
+}
+.shoplinks{
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+  .linkfromshop{
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: black;
+    border: 2px solid transparent;
+    &:hover{
+      background: white;
+      color: black;
+      border: 2px solid black;
+      transition: .7s;
+    }
+  }
+
+}
+.buyform{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  input{
+    width: 50%;
+    margin: 0 0 20px 0;
+  }
+}
+.buyp{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.c{
+  padding: 30px;
+}
+.stickybtn{
+  background: #2BDABA;
+  border: none;
+  align-self: start;
+  position: sticky;
+  top: 15%;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 20px 40px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  &:hover{
+    background: black;
+    border: 2px solid #2BDABA;
+    transition: .7s;
+  }
+
+}

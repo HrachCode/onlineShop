@@ -1,0 +1,82 @@
+.botall{
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.figure-hover{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+}
+figure{
+    height: 100%;
+}
+.figure-hover img{
+    width: 100%;
+    height: 100%;
+}
+.d {
+    width: 100%;
+}
+.test{
+    height: 300px;
+}
+.test:hover .d{
+    width: 103%;
+    transition: 1s;
+}
+.figure-hover figcaption{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    margin-left: -5%;
+    top: 30px;
+    left: 30px;
+    background: rgba(0,0,0,.2);
+}
+.h h3 span{
+    color: red;
+    font-weight: bolder;
+}
+.h h3{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+figcaption p{
+    color: transparent;
+    font-size: 18px;
+    letter-spacing: 10px;
+    opacity: 0.2;
+    margin-top: 25%;
+    margin-left: 45%;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.test:hover figcaption {
+
+    border: 5px solid white;
+    transform: translateX(30px);
+    transition: .7s
+}
+.test:hover figcaption p{
+    opacity: 1;
+    transition: 1s;
+    color: white;
+}
+.h{
+    position: absolute;
+    top:28%;
+    right: 7%;
+    z-index: 1;
+}
