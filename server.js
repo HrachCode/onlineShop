@@ -23,8 +23,8 @@ app.use(
 
 //'mongodb+srv://virap:erevan10@cluster0-vxh3h.mongodb.net/test?retryWrites=true&w=majority'
 // 'mongodb://localhost/Lite_shop'/
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/Lite_shop'
-// 'mongodb+srv://virap:erevan10@cluster0-vxh3h.mongodb.net/test?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGODB_URL || 'mongodb+srv://virap:erevan10@cluster0-vxh3h.mongodb.net/test?retryWrites=true&w=majority';
+
 
 
 mongoose
