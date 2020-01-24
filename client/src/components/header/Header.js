@@ -196,6 +196,7 @@ export default class Header extends Component{
                     openSign:false,
 
                 })
+                window.onscroll = function () { window.scrollTo(); };
             }else{
                 console.log(res)
             }
@@ -229,9 +230,11 @@ console.log(res.data);
                 this.setState({
                     openUp:false
                 })
+                window.onscroll = function () { window.scrollTo(); };
             }
 
         }).catch((err)=> console.log(err))
+
     }
 
     render() {

@@ -33,6 +33,7 @@ import pic4 from '../components/slider/slideimg/banner5.jpg'
 
             })
             .catch(err => console.log(err))
+           window.scroll(0,0)
     }
 
     getProduct = body => this.setState({products:body, loading:false})

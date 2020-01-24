@@ -14,6 +14,7 @@ export default class Shop extends Component{
     }
     componentDidMount() {
         this.shopBasket()
+        window.scroll(0,0)
     }
 
     shopBasket() {

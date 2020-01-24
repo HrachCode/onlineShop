@@ -124,7 +124,7 @@ export default class Goods extends Component {
     render() {
      
       let admin = this.state.adminISLogined.islogined;
-           if(admin){
+           if(!admin){
         return <LoginAdmin admin={this.admin}/>
       }
      return(
