@@ -27,12 +27,13 @@ class Shopcart extends React.Component {
 
     onSubmit= (e)=>{
         e.preventDefault();
-
+        
         const getShopBascket = new GetShopBascket();
         getShopBascket.cart({id:e.target.name},'stok/cartVew')
             .then(body =>{
                 const setitem = this.props.setitem;
                 setitem(body)
+               
             })
             .catch(err => console.log(err))
 
@@ -46,11 +47,14 @@ class Shopcart extends React.Component {
             query:el,
 
         });
+        this.setState({loading:false})
         setProduct(`stok/${el}`,"GET")
             .then(body =>{
                 this.getProduct(body)
+               
             })
             .catch(err => console.log(err))
+            this.setState({loading:true})
     }
 
 

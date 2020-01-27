@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react"
 import axios from 'axios'
-import Spiner from '../Spiner/Spiner'
 import Pagination from './Pagination'
 import Prductitems from './Prductitems'
-
+import AwesomeComponent from '../loaders/loader-1'
 
 export default function Home(props) {
     
-    // const [products, setState] = useState({item:[],loading:true})
+    
   
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -43,7 +42,7 @@ const deletItem = async id=>{
 }
 
    if(loading){
-     return <Spiner />
+     return <AwesomeComponent />
    }
     return(
     <div>

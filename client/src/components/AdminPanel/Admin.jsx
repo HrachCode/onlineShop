@@ -5,7 +5,10 @@ import uuid from 'uuidv4';
 import Home from './Home'
 import AddProduct from './AddProduct'
 import LoginAdmin from './LoginAdmin'
+import InputWithIcon from './RegisterAdmin'
 import {NavLink} from 'react-router-dom'
+
+
 export default class Goods extends Component {
     state = {
       new_arrivals:false, 
@@ -19,14 +22,14 @@ export default class Goods extends Component {
         productCountInSok:'',
       fileSelected:null,
       navigate:'home',
-      navigation:[{id:1,text:'home'},{id:2,text:'add product'},{id:3,text:'static'}],
+      navigation:[{id:1,text:'home'},{id:2,text:'add product'},{id:3,text:'Admins Registration'}],
       adminISLogined:'',
       selectedId:null,
       } 
       onChange = (e)=> {
         const name = e.target.name;
         const value = e.target.value;
-          this.setState({ [name]: value })
+        this.setState({ [name]: value })
         
       }
       onSubmit=(e)=> {
@@ -121,6 +124,10 @@ export default class Goods extends Component {
       this.setState({})
       console.log('olla')
     }
+
+    succsess = ()=>{
+      this.setState({navigate:'home'})
+    }
     render() {
      
       let admin = this.state.adminISLogined.islogined;
@@ -143,7 +150,9 @@ export default class Goods extends Component {
         </ul>
       </div>
       {(this.state.navigate === 'home')?<Home apdateProduct={this.apdateProduct} />
-      :(this.state.navigate === 'add product')?<AddProduct setings={this.setings} />:null}
+      :(this.state.navigate === 'add product')?<AddProduct setings={this.setings} />
+      :(this.state.navigate === 'Admins Registration')?<InputWithIcon succsess={this.succsess}/>
+      :null}
     
             </div>     
      )

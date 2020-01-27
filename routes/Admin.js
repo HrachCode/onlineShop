@@ -8,20 +8,23 @@ const Admin = require('../models/Admin')
 
 process.env.SECRET_KEY = 'supersecretsdecodejvst'
 
-admin.post('/register', (req, res) => {
+admin.post('/adminRegistration', (req, res) => {
+ 
   
   const adminData = {
-    first_name,
-    password,
-    } = req.body;
+    first_name:req.body.data.first_name,
+    password:req.body.data.password,
+    }
   console.log(adminData)
   User.findOne({
-    first_name: req.body.first_name
+    first_name: adminData.first_name
   })
     .then(admin => {
-      console.log(admin)
+      if(admin){
+        return res.status(305).json({message:'chois another name for admin'})
+      }
       if (!admin) {
-        bcrypt.hash(req.body.password, 10, (err, hash) => {
+        bcrypt.hash(req.body.data.password, 10, (err, hash) => {
           adminData.password = hash
           Admin.create(adminData)
             .then(admin => {
