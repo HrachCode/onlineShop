@@ -5,10 +5,7 @@ export default props=>{
 
     const [productforApdate, chaingState] = useState(props.props)
 
-    // useEffect(() => {
-    //     chaingState(props.props)
-      
-    //        },[props.props]);
+
          console.log(props.props)
     return(
         <div className="modal fade" id="exampleModal"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

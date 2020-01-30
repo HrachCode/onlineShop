@@ -8,7 +8,6 @@ const ProductChaigPage = ({prodct}) => {
     let [apdProduct,setstate] = useState({apdProduct:'',visibl:false})
     const products = ['onChangeimg', 'Wallets', 'Footwear', 'Watches', 'Accessories', 'Bags', 'Swimwear',
     ' Caps & Hats', 'Jewellery', 'One', 'Sunglasses', 'Perfumes', 'Beauty', 'Shirts', 'Sunglasses']
-  const productCotegory = ['womensProduct','meanProduct','chaiildrenProduct'] ;
     useEffect(()=>{
         axios
       .post('stok/getSinglProduct', {
