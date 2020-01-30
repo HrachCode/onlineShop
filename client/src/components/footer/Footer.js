@@ -74,21 +74,21 @@ export default ()=>{
                            <i className="fa fa-phone" aria-hidden="true"></i>
                            <div>
                                <b>Phone Number</b>
-                               <p>+1 234 567 8901</p>
+                               <p>+374 99 132 032</p>
                            </div>
                        </div>
                        <div className={'footercontact'}>
                            <i className="fa fa-envelope" aria-hidden="true"></i>
                            <div>
                                <b>Email Address</b>
-                               <p>Email : <span className={'examolefoot'}>mail@example.com</span></p>
+                               <p>Email : <span className={'examolefoot'}>info@alcyonsystems.am</span></p>
                            </div>
                        </div>
                        <div className={'footercontact'}>
                            <i className="fa fa-map-marker" aria-hidden="true"></i>
                            <div>
                                <b>Location</b>
-                               <p>Armenia,Yerevan Moscow street</p>
+                               <p>Armenia,Yerevan, Moscow street 3/2</p>
                            </div>
                        </div>
                    </div>
