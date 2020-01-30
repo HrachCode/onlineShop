@@ -17,7 +17,7 @@ export default class Footerbottom extends Component{
                     </div>
                 </div>
                 <div className={'rights'}>
-                    <p>© 2019 Elite shoppy. All rights reserved | Designed by <b>Alcyonsystems</b></p>
+                    <p>© 2019 Elite shoppy. All rights reserved | Designed by <b>Alcyon Systems LLC</b></p>
                 </div>
             </div>
         )
