@@ -17,7 +17,7 @@
     "bootstrap": "^4.3.1",
     "concurrently": "^5.0.0",
     "cors": "^2.8.5",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "jsonwebtoken": "^7.4.2",
     "media-queries": "^1.0.5",
     "mkdirp": "^0.5.1",
