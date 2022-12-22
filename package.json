@@ -18,7 +18,7 @@
     "concurrently": "^5.0.0",
     "cors": "^2.8.5",
     "express": "^4.16.3",
-    "jsonwebtoken": "^7.4.2",
+    "jsonwebtoken": "^9.0.0",
     "media-queries": "^1.0.5",
     "mkdirp": "^0.5.1",
     "mongodb": "^3.1.6",
